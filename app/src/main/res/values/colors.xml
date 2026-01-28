@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand greens -->
+    <color name="green_primary">#2E7D32</color>
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_soft">#CFE8D0</color>
+
+    <!-- Surfaces -->
+    <color name="bg_soft">#F4F6F3</color>
+    <color name="card_white">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#6A6A6A</color>
+
+    <!-- Bottom nav (classic dark bar like your screenshot) -->
+    <color name="nav_bg">#2B2B2B</color>
+    <color name="nav_inactive">#9E9E9E</color>
+
+    <color name="recyclable">#2E7D32</color>       <!-- green -->
+    <color name="non_recyclable">#C62828</color>   <!-- red -->
+    <color name="unknown">#F9A825</color>          <!-- yellow -->
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Item"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/text_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_marginTop="6dp"
+            android:text="Recyclable"
+            android:textStyle="bold"
+            android:textColor="@color/green_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="What is it?"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvWhat"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:text="Why?"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvWhy"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:text="How to dispose?"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHow"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:text="Do"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDos"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:text="Don't"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDonts"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:text="Common confusions"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvConfusions"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnViewLearn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:text="View in Learn Guide"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/green_primary"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

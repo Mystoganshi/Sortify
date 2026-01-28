@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Force a LIGHT theme always -->
+    <style name="Theme.Sortify" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorSecondary">@color/green_primary</item>
+
+        <!-- App chrome -->
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:navigationBarColor">@color/nav_bg</item>
+
+        <!-- Default app background -->
+        <item name="android:windowBackground">@color/bg_soft</item>
+    </style>
+
+</resources>
