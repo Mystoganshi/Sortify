@@ -30,4 +30,10 @@ interface ScanDao {
         WHERE timestamp >= :startOfDayMillis
     """)
     fun scansToday(startOfDayMillis: Long): Flow<Int>
+
+    @Query("DELETE FROM scan_items WHERE scanId = :scanId")
+    suspend fun deleteItems(scanId: Long)
+
+    @Query("DELETE FROM scans WHERE id = :scanId")
+    suspend fun deleteScan(scanId: Long)
 }

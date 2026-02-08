@@ -38,6 +38,10 @@ class DetectedItemsFragment : Fragment(R.layout.fragment_detected_items) {
             b.tvEmpty.visibility = if (list.isEmpty()) View.VISIBLE else View.GONE
             adapter.submit(list)
         }
+
+        b.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
     override fun onDestroyView() {

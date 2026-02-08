@@ -18,10 +18,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private val b get() = _b!!
 
     private val vm: ScanViewModel by activityViewModels()
-    private val adapter = RecentScanAdapter()
+    private lateinit var adapter: RecentScanAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _b = FragmentHomeBinding.bind(view)
+
+        adapter = RecentScanAdapter { scanId ->
+            vm.deleteScan(scanId)
+        }
 
         b.rvRecent.layoutManager = LinearLayoutManager(requireContext())
         b.rvRecent.adapter = adapter

@@ -24,6 +24,12 @@ class ItemInfoFragment : Fragment(R.layout.fragment_item_info) {
 
         b.tvTitle.text = name
         b.tvStatus.text = if (recyclable) "Recyclable" else "Non-Recyclable"
+        
+        if (info != null) {
+             b.ivItemIcon.setImageResource(info.getDisplayImage())
+        } else {
+             b.ivItemIcon.setImageResource(R.drawable.ic_item_placeholder)
+        }
 
         b.tvWhat.text = info?.whatItIs ?: "No details available."
         b.tvWhy.text = info?.why ?: "No details available."
@@ -35,6 +41,10 @@ class ItemInfoFragment : Fragment(R.layout.fragment_item_info) {
         b.btnViewLearn.setOnClickListener {
             val args = Bundle().apply { putInt("classId", classId) }
             findNavController().navigate(R.id.learnDetailFragment, args)
+        }
+
+        b.btnBack.setOnClickListener {
+            findNavController().navigateUp()
         }
     }
 

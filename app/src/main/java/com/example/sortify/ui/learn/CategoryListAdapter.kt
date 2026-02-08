@@ -41,6 +41,11 @@ class CategoryListAdapter(
         fun bind(item: WasteInfo) {
             b.tvName.text = item.name
             b.tvStatus.text = if (item.recyclable) "Recyclable" else "Non-Recyclable"
+            b.tvStatus.setTextColor(
+                if (item.recyclable) b.root.context.getColor(com.example.sortify.R.color.green_primary)
+                else b.root.context.getColor(android.R.color.holo_red_dark)
+            )
+            b.ivItemIcon.setImageResource(item.getDisplayImage())
 
             b.root.setOnClickListener { onClick(item) }
         }

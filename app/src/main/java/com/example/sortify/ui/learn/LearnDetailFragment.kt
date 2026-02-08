@@ -37,6 +37,15 @@ class LearnDetailFragment : Fragment() {
 
         // These are usually present in your layout, but we still fetch safely
         findText(view, "tvTitle")?.text = name
+        
+        // Find existing imageview by ID or add finding logic if using binding
+        val ivIcon = view.findViewById<android.widget.ImageView>(R.id.ivItemIcon)
+        if (info != null) {
+            ivIcon?.setImageResource(info.getDisplayImage())
+        } else {
+             // Fallback if no info found (shouldn't happen for valid IDs)
+             ivIcon?.setImageResource(R.drawable.ic_item_placeholder)
+        }
 
         findText(view, "tvStatus")?.apply {
             text = if (recyclable) "Recyclable" else "Non-Recyclable"
@@ -73,6 +82,12 @@ class LearnDetailFragment : Fragment() {
             Haptics.medium(v)
             // change destination if your nav graph uses a different action/destination id
             findNavController().navigate(R.id.scanEntryFragment)
+        }
+
+        // Back button
+        val backBtn = view.findViewById<android.widget.ImageButton>(R.id.btnBack)
+        backBtn?.setOnClickListener {
+            findNavController().navigateUp()
         }
     }
 

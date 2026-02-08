@@ -73,6 +73,10 @@ class LiveScanFragment : Fragment(R.layout.fragment_live_scan) {
             showSavedBanner()
         }
 
+        b.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
         startCamera()
     }
 
@@ -97,7 +101,7 @@ class LiveScanFragment : Fragment(R.layout.fragment_live_scan) {
             setFitToContents(true)
 
             // Bigger peek height so it's clearly visible
-            peekHeight = dp(140)
+            peekHeight = dp(100)
 
             // Force it into collapsed state after layout
             b.cardResult.post {
@@ -105,14 +109,11 @@ class LiveScanFragment : Fragment(R.layout.fragment_live_scan) {
             }
         }
 
-        // Tap handle to expand/collapse
-        b.resultHandle.setOnClickListener {
-            val behavior = sheetBehavior ?: return@setOnClickListener
-            behavior.state =
-                if (behavior.state == BottomSheetBehavior.STATE_EXPANDED)
-                    BottomSheetBehavior.STATE_COLLAPSED
-                else
-                    BottomSheetBehavior.STATE_EXPANDED
+        // Tap header to expand/collapse the content section
+        b.resultHeader.setOnClickListener {
+            val expanded = b.resultContent.visibility == View.VISIBLE
+            b.resultContent.visibility = if (expanded) View.GONE else View.VISIBLE
+            b.ivResultChevron.animate().rotation(if (expanded) 0f else 180f).setDuration(160).start()
         }
     }
 

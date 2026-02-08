@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Metal can icon -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M5,4v16c0,1.1 0.89,2 2,2h10c1.1,0 2,-0.9 2,-2V4c0,-1.1 -0.9,-2 -2,-2H7C5.89,2 5,2.9 5,4zM12,6c2.76,0 5,0.67 5,1.5S14.76,9 12,9 7,8.33 7,7.5 9.24,6 12,6zM7,11h10v9H7V11z"/>
+</vector>

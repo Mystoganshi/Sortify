@@ -52,6 +52,10 @@ class CategoryListFragment : Fragment(R.layout.fragment_category_list) {
 
         b.tvEmpty.visibility = if (list.isEmpty()) View.VISIBLE else View.GONE
         adapter.submit(list)
+
+        b.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
     override fun onDestroyView() {

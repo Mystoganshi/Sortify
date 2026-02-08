@@ -78,6 +78,13 @@ class ScanViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
+    fun deleteScan(scanId: Long) {
+        viewModelScope.launch(Dispatchers.IO) {
+            dao.deleteItems(scanId)
+            dao.deleteScan(scanId)
+        }
+    }
+
     private fun startOfTodayMillis(): Long {
         val cal = Calendar.getInstance()
         cal.set(Calendar.HOUR_OF_DAY, 0)

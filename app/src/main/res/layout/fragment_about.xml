@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="• Detects common classroom waste items\n• Shows if an item is recyclable or not\n• Provides disposal guidance in the Learn guide"
+                    android:text="• Detects common waste items\n• Shows if an item is recyclable or not\n• Provides disposal guidance in the Learn guide"
                     android:textColor="@color/text_secondary" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

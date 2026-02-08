@@ -7,7 +7,9 @@ import com.example.sortify.data.ScanWithItems
 import com.example.sortify.databinding.RowRecentScanBinding
 import java.util.concurrent.TimeUnit
 
-class RecentScanAdapter : RecyclerView.Adapter<RecentScanAdapter.VH>() {
+class RecentScanAdapter(
+    private val onDelete: (scanId: Long) -> Unit = {}
+) : RecyclerView.Adapter<RecentScanAdapter.VH>() {
 
     private var items: List<ScanWithItems> = emptyList()
 
@@ -50,6 +52,10 @@ class RecentScanAdapter : RecyclerView.Adapter<RecentScanAdapter.VH>() {
 
         holder.b.tvSummary.text = names
         holder.b.tvCounts.text = "Recyclable: $recyclableCount | Non-Recyclable: $nonCount"
+
+        holder.b.btnDelete.setOnClickListener {
+            onDelete(scanWithItems.scan.id)
+        }
     }
 
     private fun timeAgo(ts: Long): String {

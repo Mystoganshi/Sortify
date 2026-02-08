@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Plastic bottle icon -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M6,9V4h2V2h8v2h2v5c0,1.1 -0.9,2 -2,2h-1v9c0,0.55 -0.45,1 -1,1H10c-0.55,0 -1,-0.45 -1,-1v-9H8C6.9,11 6,10.1 6,9zM16,9V4H8v5H16z"/>
+</vector>

@@ -10,10 +10,14 @@
         android:label="Home">
         <action
             android:id="@+id/action_home_to_scanEntry"
-            app:destination="@id/scanEntryFragment" />
+            app:destination="@id/scanEntryFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_home_to_learn"
-            app:destination="@id/learnFragment" />
+            app:destination="@id/learnFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 
     <fragment

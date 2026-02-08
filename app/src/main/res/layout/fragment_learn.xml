@@ -144,14 +144,26 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Paper"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_paper"
+                            android:contentDescription="Paper" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Paper"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
@@ -163,14 +175,25 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Plastic"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_plastic"
+                            android:contentDescription="Plastic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Plastic"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
@@ -189,14 +212,25 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Metal"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_metal"
+                            android:contentDescription="Metal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Metal"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
@@ -208,14 +242,25 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Glass"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_glass"
+                            android:contentDescription="Glass" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Glass"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
@@ -234,14 +279,25 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Organic"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_organic"
+                            android:contentDescription="Organic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Organic"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
@@ -253,14 +309,25 @@
                     android:radius="16dp"
                     app:cardElevation="2dp">
 
-                    <TextView
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="E-waste"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_category_ewaste"
+                            android:contentDescription="E-waste" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="E-waste"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
@@ -272,14 +339,25 @@
                 android:radius="16dp"
                 app:cardElevation="2dp">
 
-                <TextView
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Other"
-                    android:textStyle="bold"
-                    android:textColor="@color/text_primary"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_category_other"
+                        android:contentDescription="Other" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Other"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
